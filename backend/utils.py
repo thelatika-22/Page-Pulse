@@ -3,7 +3,7 @@ import time
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 
-from config import REQUEST_TIMEOUT,USER_AGENT
+from backend.config import REQUEST_TIMEOUT, USER_AGENT
 
 def validate_url(url):
     try:
