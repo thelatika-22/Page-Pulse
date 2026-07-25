@@ -1,4 +1,4 @@
-REQUEST_TIMEOUT = 10
+REQUEST_TIMEOUT = 0.001
 
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
