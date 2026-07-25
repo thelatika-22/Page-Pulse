@@ -205,7 +205,7 @@ The application has been tested with:
 
 ### Analysis Result
 
-![Result](results.png)
+![Result](result.png)
 
 ### Error Handling
 
