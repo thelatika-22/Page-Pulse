@@ -1,0 +1,91 @@
+body{
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    margin: 0;
+    padding: 40px;
+}
+
+.container{
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align: center;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.subtitle{
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #1d4ed8;
+}
+
+#loading{
+    text-align: center;
+    color: #2563eb;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#results{
+    margin-top: 25px;
+}
+
+#results p{
+    background: #f8f9fa;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 10px 0;
+    border-left: 4px solid #2563eb;
+}
+
+.hidden{
+    display: none;
+}
+
+footer{
+    margin-top: 30px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+footer a{
+    color: #2563eb;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}

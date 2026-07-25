@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Pulse</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "container">
+
+        <h1>🚀Page Pulse</h1>
+
+        <p class = "subtitle"> 
+            Website SEO & Performance Analyzer
+        </p>
+
+        <input
+        type = "text"
+        id = "urlInput"
+        placeholder = "Enter website URL">
+
+        <button id = "analyzeBtn">
+            Analyze Website
+        </button>
+
+        
+
+        <div id="loading" class="hidden">
+            <h3>Analyzing Website...</h3>
+             <p>Please wait while Page Pulse analyzes the webpage.</p>
+        </div>
+            
+        
+
+        <div id = "results" class = "hidden">
+            
+            <h2>Analysis Result</h2>
+
+            <p><strong>📄Title:</strong> <span id = "title"> </span></p>
+
+            <p><strong>📝Meta Description:</strong> <span id = "meta"> </span></p>
+
+            <p><strong>🔤H1 Count:</strong> <span id = "h1"> </span></p>
+
+            <p><strong>📖Word Count:</strong> <span id = "words"> </span></p>
+
+            <p><strong>🖼Missing Alt Images:</strong> <span id = "alt"> </span></p>
+
+            <p><strong>⚡Response Time:</strong> <span id = "time"> </span></p>
+
+            <p><strong>📡Status Code:</strong> <span id="status"></span></p>
+        </div>
+    </div>
+    
+
+
+<script src = "script.js"></script>
+</body>
+<footer>
+    <p>
+        Built for
+        <a href="https://digitalheroesco.com" target="_blank">
+            Digital Heroes Training Task
+        </a>
+    </p>
+</footer>
+</html>
