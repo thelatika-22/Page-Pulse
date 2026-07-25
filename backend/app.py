@@ -87,7 +87,7 @@ def analyze():
         })
     except requests.exceptions.Timeout:
         return jsonify ({
-            "error":"Request timed out."
+            "error":"The website took too long to respond. Please try again later."
         }), 408
 
     except requests.exceptions.ConnectionError:
