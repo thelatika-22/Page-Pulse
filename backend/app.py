@@ -47,6 +47,8 @@ def analyze():
                   "error" : "URL is not an HTML page."
             }), 400
 
+        print("Content-Type:", response.headers.get("Content-Type"))
+
         soup = parse_html(response.text)
 
         title = extract_title(soup)
