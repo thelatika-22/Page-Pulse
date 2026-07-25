@@ -37,12 +37,25 @@ def analyze():
             "error": "Invalid URL"
         }),400
 
+    NON_HTML_EXTENSIONS = (
+    ".pdf", ".jpg", ".jpeg", ".png", ".gif",
+    ".svg", ".webp", ".zip",
+    ".doc", ".docx",
+    ".ppt", ".pptx",
+    ".xls", ".xlsx"
+)
+
+    if url.lower().endswith(NON_HTML_EXTENSIONS):
+        return jsonify({
+            "error": "URL is not an HTML page."
+    }), 400
+
     try:
         response, response_time = fetch_page(url)
 
-        content_type = response.headers.get("Content-Type", "")
+        content_type = response.headers.get("Content-Type", "").lower()
 
-        if "text/html" not in content_type.lower():
+        if "text/html" not in content_type:
             return jsonify({
                   "error" : "URL is not an HTML page."
             }), 400
